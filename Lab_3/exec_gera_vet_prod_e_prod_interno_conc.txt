@@ -1,0 +1,717 @@
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ gcc -o gera_vet_prod gera_vet_prod.c -lm
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ gcc -o prod_interno_conc prod_interno_conc.c -lpthread -lm
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./gera_vet_prod 1000 vet1k.bin
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./gera_vet_prod 10000 vet10k.bin
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./gera_vet_prod 100000 vet100k.bin
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./gera_vet_prod 1000000 vet1M.bin
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 1
+Produto interno concorrente = 29369886.583900038152933
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.648830e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 1
+Produto interno concorrente = 29369886.583900038152933
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.081394e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 1
+Produto interno concorrente = 29369886.583900038152933
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.129078e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 1
+Produto interno concorrente = 29369886.583900038152933
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.100468e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 1
+Produto interno concorrente = 29369886.583900038152933
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.059937e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 2
+Produto interno concorrente = 29369886.583900056779385
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -6.3420236367e-16
+Tempo de execucao           = 2.901554e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 2
+Produto interno concorrente = 29369886.583900056779385
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -6.3420236367e-16
+Tempo de execucao           = 2.739429e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 2
+Produto interno concorrente = 29369886.583900056779385
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -6.3420236367e-16
+Tempo de execucao           = 2.548695e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 2
+Produto interno concorrente = 29369886.583900056779385
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -6.3420236367e-16
+Tempo de execucao           = 2.439022e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 2
+Produto interno concorrente = 29369886.583900056779385
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -6.3420236367e-16
+Tempo de execucao           = 2.350807e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 4
+Produto interno concorrente = 29369886.583900064229965
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -8.8788330914e-16
+Tempo de execucao           = 3.340244e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 4
+Produto interno concorrente = 29369886.583900064229965
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -8.8788330914e-16
+Tempo de execucao           = 3.640652e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 4
+Produto interno concorrente = 29369886.583900064229965
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -8.8788330914e-16
+Tempo de execucao           = 3.359318e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 4
+Produto interno concorrente = 29369886.583900064229965
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -8.8788330914e-16
+Tempo de execucao           = 3.519058e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 4
+Produto interno concorrente = 29369886.583900064229965
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -8.8788330914e-16
+Tempo de execucao           = 5.259514e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 8
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 1.062155e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 8
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 6.990433e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 8
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 5.059242e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 8
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 4.999638e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 8
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 8.399487e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 12
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 1.317024e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 12
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 7.948875e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 12
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 1.467943e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 12
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 1.155853e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1k.bin 12
+Produto interno concorrente = 29369886.583900060504675
+Produto interno sequencial  = 29369886.583900038152933
+Variacao relativa           = -7.6104283641e-16
+Tempo de execucao           = 8.430481e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 1
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.510548e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 1
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.391338e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 1
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.322197e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 1
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.350807e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 1
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.391338e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 2
+Produto interno concorrente = 274054018.237766504287720
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 8.6996928793e-16
+Tempo de execucao           = 2.570152e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 2
+Produto interno concorrente = 274054018.237766504287720
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 8.6996928793e-16
+Tempo de execucao           = 2.651215e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 2
+Produto interno concorrente = 274054018.237766504287720
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 8.6996928793e-16
+Tempo de execucao           = 2.620220e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 2
+Produto interno concorrente = 274054018.237766504287720
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 8.6996928793e-16
+Tempo de execucao           = 2.610683e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 2
+Produto interno concorrente = 274054018.237766504287720
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 8.6996928793e-16
+Tempo de execucao           = 2.529621e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 4
+Produto interno concorrente = 274054018.237766683101654
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 2.1749232198e-16
+Tempo de execucao           = 1.229048e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 4
+Produto interno concorrente = 274054018.237766683101654
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 2.1749232198e-16
+Tempo de execucao           = 3.390312e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 4
+Produto interno concorrente = 274054018.237766683101654
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 2.1749232198e-16
+Tempo de execucao           = 3.550053e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 4
+Produto interno concorrente = 274054018.237766683101654
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 2.1749232198e-16
+Tempo de execucao           = 3.581047e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 4
+Produto interno concorrente = 274054018.237766683101654
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 2.1749232198e-16
+Tempo de execucao           = 3.490448e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 8
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 6.899834e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 8
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 4.789829e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 8
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 5.431175e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 8
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 1.049995e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 8
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 6.558895e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 12
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.084017e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 12
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 8.540154e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 12
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 7.719994e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 12
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 1.003027e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet10k.bin 12
+Produto interno concorrente = 274054018.237766742706299
+Produto interno sequencial  = 274054018.237766742706299
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 1.156092e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 1
+Produto interno concorrente = 2760952482.880928516387939
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 4.489422e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 1
+Produto interno concorrente = 2760952482.880928516387939
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 4.971027e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 1
+Produto interno concorrente = 2760952482.880928516387939
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 5.648136e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 1
+Produto interno concorrente = 2760952482.880928516387939
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 4.789829e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 1
+Produto interno concorrente = 2760952482.880928516387939
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 5.030632e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 2
+Produto interno concorrente = 2760952482.880949974060059
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -7.7718368035e-15
+Tempo de execucao           = 3.571510e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 2
+Produto interno concorrente = 2760952482.880949974060059
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -7.7718368035e-15
+Tempo de execucao           = 3.798008e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 2
+Produto interno concorrente = 2760952482.880949974060059
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -7.7718368035e-15
+Tempo de execucao           = 3.612041e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 2
+Produto interno concorrente = 2760952482.880949974060059
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -7.7718368035e-15
+Tempo de execucao           = 3.678799e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 2
+Produto interno concorrente = 2760952482.880949974060059
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -7.7718368035e-15
+Tempo de execucao           = 3.640652e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 4
+Produto interno concorrente = 2760952482.880929946899414
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -5.1812245357e-16
+Tempo de execucao           = 4.191399e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 4
+Produto interno concorrente = 2760952482.880929946899414
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -5.1812245357e-16
+Tempo de execucao           = 3.461838e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 4
+Produto interno concorrente = 2760952482.880929946899414
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -5.1812245357e-16
+Tempo de execucao           = 4.301071e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 4
+Produto interno concorrente = 2760952482.880929946899414
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -5.1812245357e-16
+Tempo de execucao           = 1.292944e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 4
+Produto interno concorrente = 2760952482.880929946899414
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = -5.1812245357e-16
+Tempo de execucao           = 4.160404e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 8
+Produto interno concorrente = 2760952482.880926132202148
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 8.6353742261e-16
+Tempo de execucao           = 1.125097e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 8
+Produto interno concorrente = 2760952482.880926132202148
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 8.6353742261e-16
+Tempo de execucao           = 6.659031e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 8
+Produto interno concorrente = 2760952482.880926132202148
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 8.6353742261e-16
+Tempo de execucao           = 5.400181e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 8
+Produto interno concorrente = 2760952482.880926132202148
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 8.6353742261e-16
+Tempo de execucao           = 6.430149e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 8
+Produto interno concorrente = 2760952482.880926132202148
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 8.6353742261e-16
+Tempo de execucao           = 1.498938e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 12
+Produto interno concorrente = 2760952482.880924701690674
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 1.3816598762e-15
+Tempo de execucao           = 9.241104e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 12
+Produto interno concorrente = 2760952482.880924701690674
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 1.3816598762e-15
+Tempo de execucao           = 1.410961e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 12
+Produto interno concorrente = 2760952482.880924701690674
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 1.3816598762e-15
+Tempo de execucao           = 1.071930e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 12
+Produto interno concorrente = 2760952482.880924701690674
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 1.3816598762e-15
+Tempo de execucao           = 1.360893e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet100k.bin 12
+Produto interno concorrente = 2760952482.880924701690674
+Produto interno sequencial  = 2760952482.880928516387939
+Variacao relativa           = 1.3816598762e-15
+Tempo de execucao           = 9.999275e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 1
+Produto interno concorrente = 27705123548.913742065429688
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.940178e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 1
+Produto interno concorrente = 27705123548.913742065429688
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.661943e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 1
+Produto interno concorrente = 27705123548.913742065429688
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.736092e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 1
+Produto interno concorrente = 27705123548.913742065429688
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.662897e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 1
+Produto interno concorrente = 27705123548.913742065429688
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 0.0000000000e+00
+Tempo de execucao           = 2.655983e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 2
+Produto interno concorrente = 27705123548.913513183593750
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 8.2613540970e-15
+Tempo de execucao           = 1.511097e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 2
+Produto interno concorrente = 27705123548.913513183593750
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 8.2613540970e-15
+Tempo de execucao           = 1.486063e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 2
+Produto interno concorrente = 27705123548.913513183593750
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 8.2613540970e-15
+Tempo de execucao           = 1.533985e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 2
+Produto interno concorrente = 27705123548.913513183593750
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 8.2613540970e-15
+Tempo de execucao           = 2.126932e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 2
+Produto interno concorrente = 27705123548.913513183593750
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 8.2613540970e-15
+Tempo de execucao           = 1.577139e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 4
+Produto interno concorrente = 27705123548.913692474365234
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 1.7899600543e-15
+Tempo de execucao           = 8.690357e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 4
+Produto interno concorrente = 27705123548.913692474365234
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 1.7899600543e-15
+Tempo de execucao           = 8.521080e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 4
+Produto interno concorrente = 27705123548.913692474365234
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 1.7899600543e-15
+Tempo de execucao           = 1.263142e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 4
+Produto interno concorrente = 27705123548.913692474365234
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 1.7899600543e-15
+Tempo de execucao           = 9.450912e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 4
+Produto interno concorrente = 27705123548.913692474365234
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = 1.7899600543e-15
+Tempo de execucao           = 9.200573e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 8
+Produto interno concorrente = 27705123548.913898468017578
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -5.6452586329e-15
+Tempo de execucao           = 8.590221e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 8
+Produto interno concorrente = 27705123548.913898468017578
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -5.6452586329e-15
+Tempo de execucao           = 8.919239e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 8
+Produto interno concorrente = 27705123548.913898468017578
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -5.6452586329e-15
+Tempo de execucao           = 1.053095e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 8
+Produto interno concorrente = 27705123548.913898468017578
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -5.6452586329e-15
+Tempo de execucao           = 8.847713e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 8
+Produto interno concorrente = 27705123548.913898468017578
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -5.6452586329e-15
+Tempo de execucao           = 8.609295e-04 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 12
+Produto interno concorrente = 27705123548.913780212402344
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -1.3768923495e-15
+Tempo de execucao           = 1.944065e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 12
+Produto interno concorrente = 27705123548.913780212402344
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -1.3768923495e-15
+Tempo de execucao           = 1.273155e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 12
+Produto interno concorrente = 27705123548.913780212402344
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -1.3768923495e-15
+Tempo de execucao           = 1.608849e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 12
+Produto interno concorrente = 27705123548.913780212402344
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -1.3768923495e-15
+Tempo de execucao           = 1.173973e-03 segundos
+
+┌──(nazarick㉿DESKTOP-M2F8G0M)-[~/comp_concorrente]
+└─$ ./prod_interno_conc vet1M.bin 12
+Produto interno concorrente = 27705123548.913780212402344
+Produto interno sequencial  = 27705123548.913742065429688
+Variacao relativa           = -1.3768923495e-15
+Tempo de execucao           = 1.543045e-03 segundos
