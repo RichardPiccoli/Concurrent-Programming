@@ -53,7 +53,7 @@ void *search_range(void *arg) {
 
         MD5((unsigned char *)password, strlen(password), hash);
         if (memcmp(hash, data->target_hash, DIGEST_LENGTH) == 0) {
-            // Tenta marcar a flag atomically: apenas uma thread vencerá
+            // Tenta marcar a flag atomicamente: apenas uma thread vencerá
             int expected = 0;
             if (atomic_compare_exchange_strong_explicit(
                     &password_found, &expected, 1,
